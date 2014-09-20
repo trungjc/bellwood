@@ -1,0 +1,176 @@
+/* Boxed */
+.container {
+  width: 95%;
+  max-width: 940px;
+}
+
+/* Responsive Mobile */
+@media only screen and (max-width: 767px) {
+	.row .half,
+	.row .third,
+	.row .quarter,
+	.row .fifth,
+	.row .sixth,
+	.row .twothird,
+	.row .twofifth,
+	.row .threefifth,
+	.row .fourfifth,
+	.row .fivesixth,
+	.row .threequarter {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 1.5em;
+	}
+	.push-half,
+	.push-threequarter,
+	.push-quarter,
+	.push-third,
+	.push-twothird,
+	.push-fifth,
+	.push-twofifth,
+	.push-threefifth,
+	.push-fourfifth,
+	.push-sixth,
+	.push-fivesixth {
+		left: 0;
+	}
+	.row .pull-right {
+		float: none;
+	}
+/* Blocks */
+	.block-two,
+	.block-three,
+	.block-four,
+	.block-five,
+	.block-six {
+		margin-left: 0;
+		margin-bottom: 1.5em;
+	}
+	.block-two > li,
+	.block-three > li,
+	.block-four > li,
+	.block-five > li,
+	.block-six > li {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+}
+/* Tablet (Portrait) */
+
+	/* Note: Design for a width of 768px */
+
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.container { 
+			width: 768px; 
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		header nav ul li {
+	        margin-left: 10px; 
+	    }
+	    header nav ul li a {
+	        font-size: 13px;
+	    }
+	}
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { 
+		header nav ul li {
+		        margin-left: 10px; 
+		    }
+	}
+/* Mobile (Portrait) */
+
+	/* Note: Design for a width of 320px */
+
+	@media only screen and (max-width: 767px) {
+		.container { width: 300px; }
+		.container.menu.centered {
+			position: relative;
+			padding-top: 140px;
+			margin-top: 0;
+		}
+		header {
+			height: auto;
+			margin-bottom: 0;
+			padding: 5px 0;
+		}
+		header .main-menu .responsive-nav {
+			width: 100%;
+			display: block;
+			margin: 0px auto;
+			border: 1px solid #fde6a4;
+		}
+		header nav ul {
+			text-align: center;
+			display: none;
+		}
+		header nav ul li a span {
+			display: none;
+		}
+		.menu {
+		  margin-top: 20px;
+		  padding-top: 10px;
+		}
+		.main-menu.left {
+			display: none;
+		}
+		.logo {
+		  width: auto;
+		}
+		.logo img {
+			float: none;
+		}
+		.header-opacity {
+			display: none;
+		}
+		.container.menu.left, 
+		.container.menu.right {
+			position: relative;
+			margin-top: 0;
+		}
+		.logo.centered.left {
+			right: 0;
+		}
+		.logo-left, .logo-right {
+			float: none;
+			padding-top: 140px;
+		}
+		.logo.centered.right {
+			right: 0;
+			left: 0;
+		}
+		header nav {
+			float: none;
+		}
+		.slider {
+			margin-top: 0;
+		}
+		.box-title {
+		  font-size: 9px;
+		}
+		.blog-post-item {
+			padding-right: 0;
+		}
+		.hover-card {
+		  height: 90%;
+		}
+		span.details-link {
+		  display: none;
+		}
+		.band .container {
+		  width: 100%;
+		}
+		.latest-blog-post img {
+		  width: 100%;
+		}
+	}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+	/* Note: Design for a width of 480px */
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.container { width: 420px; }
+	}
