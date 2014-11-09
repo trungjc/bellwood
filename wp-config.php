@@ -1,10 +1,10 @@
 <?php
 # Database Configuration
 define( 'DB_NAME', 'wp_bellwood' );
-define( 'DB_USER', 'bellwood' );
-define( 'DB_PASSWORD', 'sIURpvkyOpmRsLzFSEmV' );
-define( 'DB_HOST', '127.0.0.1' );
-define( 'DB_HOST_SLAVE', '127.0.0.1' );
+define( 'DB_USER', 'root' );
+define( 'DB_PASSWORD', '' );
+define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST_SLAVE', 'localhost' );
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', 'utf8_unicode_ci');
 $table_prefix = 'wp_';
@@ -106,7 +106,7 @@ $wpe_domain_mappings=array ( );
 
 $memcached_servers=array ( );
 
-define( 'WPE_LBMASTER_IP', '66.228.39.18' );
+//define( 'WPE_LBMASTER_IP', '66.228.39.18' );
 define('WPLANG','');
 
 # WP Engine ID
