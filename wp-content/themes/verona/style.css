@@ -602,11 +602,10 @@ header nav {
 					text-transform: uppercase;
 					font-weight: 600;
 					font-size: 12px;
-					line-height: 12px;
+					line-height: 16px;
 				}
 				header nav ul li ul li a:hover {
 					padding-right: 0;
-					width: 91%;
 					border-top: none;
 					color: #fff;
 				}
@@ -781,6 +780,8 @@ li.food-menu-item {
 ul.food-menu li.food-menu-item {
 	width: 242px !important;
 }
+.band ,.band h1,.band h2,.band h3,.band h4,.band p,
+.tagline h1,.tagline h2,.tagline h3,.tagline h4,.tagline h5,.tagline h6,.tagline p{color:#fff}
 .food-menu-item p {
 	overflow: hidden;
 	margin-bottom: 5px;
@@ -788,6 +789,13 @@ ul.food-menu li.food-menu-item {
 	height: 34px;
 	font-size: 10px;
         color: #333;
+}
+.copyright-full .twofifth * {
+    font-size: 13px;
+}
+.breadcrumbs-path li + li:before {
+    
+    color: white;
 }
 .image-wrapper {
 	position: relative;
@@ -1025,7 +1033,7 @@ h3.title:hover, .posted-by a:hover, .comment-count:hover {
 	float: left;
 	padding: 5px 8px;
 	border-radius: 3px;
-	background: #78361a;
+	background: none repeat scroll 0 0 #ff7400;
 	color: #fff;
 	font-weight: 400;
 	font-size: 14px;
@@ -1110,7 +1118,7 @@ fieldset {
 		width: 95%;
 		border-color: transparent;
 		border-radius: 5px;
-		background: #4e2110;
+		background: #fff;border:1px solid #dddddd;
 	}
 #comment-form textarea,
 	.wpcf7-form textarea {
@@ -1122,7 +1130,7 @@ fieldset {
 		height: 120px;
 		border-color: transparent;
 		border-radius: 5px;
-		background: #4e2110;
+		background: #fff;border:1px solid #dddddd;
 	}
 	#comment-form input[type=submit],
 	.wpcf7-form input[type=submit] {
@@ -1130,7 +1138,7 @@ fieldset {
 		padding: 13px 17px;
 		border: none;
 		border-radius: 5px;
-		background-color: #4e2110;
+		background-color:  #ff7400;
 		-webkit-background-clip: padding-box;
 		-moz-background-clip: padding;
 		background-clip: padding-box;
