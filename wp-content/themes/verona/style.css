@@ -506,7 +506,7 @@ header {
 .header-opacity {
 	z-index: 3;
 	height: 95px;
-        background:  rgba(179,160,144,0.8);
+        background:  rgba(255,255,255,0.6)!important;
 }
 .ie9 .header-opacity, .ie8 .header-opacity {
     background: url(images/transparentie9.svg) repeat scroll 0 0 transparent;
@@ -562,7 +562,7 @@ header nav {
 		padding: 0;
 		width: 180px;
 			text-transform: none;
-                  background:  rgba(255,255,255,0.9);
+                  background:  rgba(255,255,255,0.8)!important;
 		}
 		header nav ul li ul li {
 			position: relative;
@@ -830,7 +830,7 @@ ul.food-menu li.food-menu-item {
    
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
    border-top: 1px solid #f9f4f0;
-    background:fffaf5;
+    background:#fffaf6;
     overflow: hidden;
 	text-transform: uppercase;
 	font-size: 12px;;
@@ -845,18 +845,46 @@ ul.food-menu-categories {
 	.food-menu-categories li {
 		padding-bottom: 10px;
 		list-style: none;
-	}
+                padding-left: 20px;
+              position: relative;
+        }
+        .food-menu-categories li:after {
+            width:4px;
+            height: 4px;
+            display: block;
+            content: "";
+            left: 0px;
+            top:8px;
+            position: absolute;
+            background: #333;
+            -ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Chrome, Safari, Opera */
+    transform: rotate(50deg);
+        }
+        .food-menu-categories li:hover:after {
+             background: #a40f0f;
+        }
+        .food-menu-categories li:first-child:after {
+            display: none;
+        }
+        .food-menu-categories li:first-child {
+             padding-left: 0px;
+        }
+        .food-menu-categories li:first-child a {
+            font-size: 18px;color:#ff7400!important;
+            font-weight: bold;
+        }
 		.food-menu-categories li a {
 			color: #333;
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 800;
-			font-size: 18px;
+			
+                          font-size: 15px;
+                font-weight: normal;
 		}
-		.food-menu-categories li a:hover,
-		.food-menu-categories li a.selected,
-		.food-menu-categories li a:focus {
-			color: #FF7400;
+		.food-menu-categories li a:hover{
+			color: #a40f0f;
 		}
 /* When without thumbnail */
 .nothumb .menu-title,
@@ -1118,7 +1146,7 @@ fieldset {
 		width: 95%;
 		border-color: transparent;
 		border-radius: 5px;
-		background: #fff;border:1px solid #dddddd;
+		background: #ebe7e6;border:1px solid #dddddd;
 	}
 #comment-form textarea,
 	.wpcf7-form textarea {
@@ -1130,7 +1158,7 @@ fieldset {
 		height: 120px;
 		border-color: transparent;
 		border-radius: 5px;
-		background: #fff;border:1px solid #dddddd;
+		background: #ebe7e6;border:1px solid #dddddd;
 	}
 	#comment-form input[type=submit],
 	.wpcf7-form input[type=submit] {
